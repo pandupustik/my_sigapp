@@ -16,7 +16,7 @@ jobs:
             key: ${{ secrets.SSH_PRIVATE_KEY }}
             port: 22
             script: | 
-                cd /var/www/html/nextjstes 
+                cd /mysigapp 
                 git pull origin master  
                 yarn install --ignore-engines 
                 yarn add @types/react --save
